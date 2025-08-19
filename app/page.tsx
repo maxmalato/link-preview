@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/imagem-estatica.jpg",
+        secureUrl: "/imagem-estatica.jpg", // URL segura para HTTPS
         width: 1200, // Largura da imagem
         height: 630, // Altura da imagem
         alt: "Imagem de preview da página estática",
@@ -42,7 +43,7 @@ export default function HomePage() {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center py-10 bg-gray-50">
+    <main className="flex min-h-screen flex-col items-center justify-center py-2 bg-gray-50">
       <div className="text-center bg-white p-10 rounded-lg shadow-md flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-4 text-gray-800">Página Estática</h1>
         <p className="text-lg text-gray-600 mb-6">
