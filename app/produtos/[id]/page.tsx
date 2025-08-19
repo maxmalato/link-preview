@@ -99,7 +99,7 @@ export default async function ProductPage({
                     />
                 </div>
                 <Link href="/" className="text-blue-600 hover:underline">
-                    &larr; Voltar para a Home
+                    &larr; Voltar para o início
                 </Link>
             </div>
         </main>

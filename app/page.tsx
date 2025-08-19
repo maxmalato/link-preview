@@ -42,7 +42,7 @@ export default function HomePage() {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gray-50">
+    <main className="flex min-h-screen flex-col items-center justify-center py-10 bg-gray-50">
       <div className="text-center bg-white p-10 rounded-lg shadow-md flex flex-col items-center">
         <h1 className="text-4xl font-bold mb-4 text-gray-800">Página Estática</h1>
         <p className="text-lg text-gray-600 mb-6">
@@ -58,8 +58,11 @@ export default function HomePage() {
           />
         </div>
 
-        <section className="w-full max-w-md mt-8">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-700">Produtos em destaque</h2>
+        <h2 className="text-4xl font-bold mt-10 mb-4 text-gray-800">Páginas Dinâmicas</h2>
+
+        {/* Seção de produtos em destaque: */}
+        <section className="w-full max-w-md">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-700">Páginas por ID</h2>
           <ul className="flex flex-col gap-4">
             {products.map((product) => (
               <li key={product.id}>
@@ -71,6 +74,29 @@ export default function HomePage() {
                 </Link>
               </li>
             ))}
+          </ul>
+        </section>
+
+        {/* Seçao de artigos: */}
+        <section className="w-full max-w-md mt-8">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-700">Páginas por SLUG</h2>
+          <ul className="flex flex-col gap-4">
+            <li>
+              <Link
+                href="/artigos/como-escolher-um-smartphone"
+                className="block bg-gray-100 text-gray-900 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-200 transition"
+              >
+                Como escolher o smartphone ideal
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/artigos/dicas-de-programacao"
+                className="block bg-gray-100 text-gray-900 rounded-lg px-4 py-3 text-lg font-medium hover:bg-gray-200 transition"
+              >
+                Dicas de programação para iniciantes
+              </Link>
+            </li>
           </ul>
         </section>
       </div>
