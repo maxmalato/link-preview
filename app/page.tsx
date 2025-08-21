@@ -10,14 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Página Estática | Link Preview",
     description: "Esta é a descrição que aparecerá no preview da página estática.",
-    // A URL precisa ser absoluta. O Next.js ajuda a resolver isso.
-    // Coloque sua imagem em /public/minha-imagem.png
     images: [
       {
-        url: "/imagem-estatica.jpg",
-        secureUrl: "/imagem-estatica.jpg", // URL segura para HTTPS
-        width: 1200, // Largura da imagem
-        height: 630, // Altura da imagem
+        url: "https://link-preview-pearl.vercel.app/image-preview.jpg",
+        secureUrl: "https://link-preview-pearl.vercel.app/image-preview.jpg",
+        width: 1200,
+        height: 630,
         alt: "Imagem de preview da página estática",
       },
     ],
