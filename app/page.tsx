@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Página Estática | Link Preview",
     description: "Descrição para o preview no Twitter.",
-    images: ["/imagem-estatica.jpg"], // URL absoluta da imagem
+    images: ["/image-preview.jpg"],
   },
 };
 
@@ -50,7 +50,7 @@ export default function HomePage() {
         <div className="relative w-96 h-52 rounded-md overflow-hidden border shadow-lg">
           {/* Exibindo a imagem na página também */}
           <Image
-            src="/imagem-estatica.jpg"
+            src="/image-preview.jpg"
             alt="Imagem de preview"
             layout="fill"
             objectFit="cover"

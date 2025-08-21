@@ -53,7 +53,8 @@ export async function generateMetadata(
             description: product.description,
             images: [
                 {
-                    url: product.imageUrl,
+                    url: `https://link-preview-pearl.vercel.app/${product.imageUrl}`,
+                    secureUrl: `https://link-preview-pearl.vercel.app/${product.imageUrl}`,
                     width: 1200,
                     height: 630,
                     alt: `Imagem de ${product.name}`,
